@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .bg{
+        background: yellow;
+    }
+</style>
+<body>
+<ul class="app">
+
+</ul>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:'.app',
+        data:{
+            message:'信息'
+        },
+        render(createElement){
+            var obj=createElement(
+                'ul',
+                {
+                    class:{
+                    bg:true
+                    },
+                    style:{
+                        'font-size':'50px',
+                        fontSize:'60px'
+                    },
+                    attrs:{
+                        cardId:'zhan'
+                    },
+                    domProps:{
+                       innerHTML:"<span>我是html,且优先级高于下面创建的li</span>"
+                    },
+                    on:{
+                        click:function () {
+                            console.log(this)
+                        }
+                    }
+                },
+                [
+                    createElement('li',1),
+                    createElement('li',2),
+                    createElement('li',3)
+                    ]
+            )
+            console.log('虚拟dom%o',obj)
+            return obj
+        }
+    })
+</script>
+</body>
+</html>

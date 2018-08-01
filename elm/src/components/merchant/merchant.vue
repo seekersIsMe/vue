@@ -62,6 +62,7 @@
         {{item}}
       </div>
     </div>
+    <!--<test :test="test"></test>-->
   </div>
 </div>
 </template>
@@ -71,7 +72,8 @@
 <script>
 import star from 'component/star/star';
 import tiao from 'component/tiao/tiao';
-import BScroll from 'better-scroll'
+import BScroll from 'better-scroll';
+import test from 'component/test/test'
 export default {
   props:{
     seller:{
@@ -84,6 +86,11 @@ export default {
       heartChange:false,
       redHeart:{
         color:'red'
+      },
+      test:{
+        ary:[
+          1,2,3,4,5,6
+        ]
       }
     }
   },
@@ -107,7 +114,8 @@ export default {
   },
   components:{
     star,
-    tiao
+    tiao,
+    test
   }
 }
 </script>
