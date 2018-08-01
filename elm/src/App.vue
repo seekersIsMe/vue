@@ -7,7 +7,9 @@
       <router-link to="/merchant" tag="span">商家</router-link>
     </div>
     <div class="router_view">
-      <router-view :seller="seller"></router-view>
+      <keep-alive>
+        <router-view :seller="seller" ></router-view>
+      </keep-alive>
     </div>
   </div>
 </template>
