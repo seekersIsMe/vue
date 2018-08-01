@@ -1,4 +1,4 @@
-#安装环境
+# 安装环境
 
 1、全局安装vue-cli，如果安装过就不再在项目目录安装了
 
@@ -17,7 +17,7 @@
   这里就不需要对less、less-loader做webpack规则配置了，utils.js中已经对css各种预处理语言进行了配置加载器,后续需要对css做资源引入整合，可用sass-resources-loader
 
 
-tip;
+# tip;
 1.webpack.base.conf.js是vue开发环境下的webpack的配置文件，可以在其中的resolve下设置缩略路径，这样方便后面引用。
 
 2.在config中index.js中更改服务的主机地址和端口
@@ -26,7 +26,7 @@ tip;
 
 > A Vue.js project
 
-## Build Setup
+# Build Setup
 
 ``` bash
 # install dependencies
