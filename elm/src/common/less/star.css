@@ -1,0 +1,42 @@
+.star {
+  display: flex;
+  justify-content: center;
+}
+.star .star_item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-size: 20px 20px;
+}
+.star .on {
+  background-image: url('../../../components/star/star48_on@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .star .on {
+    background-image: url('../../../components/star/star48_on@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.star .half {
+  background-image: url('../../../components/star/star48_half@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .star .half {
+    background-image: url('../../../components/star/star48_half@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.star .off {
+  background-image: url('../../../components/star/star48_off@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .star .off {
+    background-image: url('../../../components/star/star48_off@3x.png');
+    background-size: 100% 100%;
+  }
+}

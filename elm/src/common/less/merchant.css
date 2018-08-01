@@ -1,0 +1,232 @@
+.merchant-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 174px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.merchant-wrapper .content {
+  width: 100%;
+}
+.merchant-wrapper .content .merchant-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+}
+.merchant-wrapper .content .merchant-header .header-left > p {
+  font-size: 14px;
+  color: #07111b;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+.merchant-wrapper .content .merchant-header .header-left .star-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.merchant-wrapper .content .merchant-header .header-left .star-wrapper > span {
+  font-size: 10px;
+  color: #4d555d;
+}
+.merchant-wrapper .content .merchant-header .header-left .star-wrapper > span:nth-of-type(1) {
+  margin-left: 8px;
+}
+.merchant-wrapper .content .merchant-header .header-left .star-wrapper > span:nth-of-type(2) {
+  margin-left: 12px;
+}
+.merchant-wrapper .content .merchant-header .header-right > div {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.merchant-wrapper .content .merchant-header .header-right > div.active {
+  color: #f01414;
+}
+.merchant-wrapper .content .merchant-header .header-right > p {
+  font-size: 10px;
+  line-height: 10px;
+  color: #4d555d;
+}
+.merchant-wrapper .content .server {
+  margin-left: 18px;
+  margin-right: 18px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+  padding: 18px 0 18px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.merchant-wrapper .content .server > div {
+  flex: 1;
+}
+.merchant-wrapper .content .server .sendPrice,
+.merchant-wrapper .content .server .deliveryPrice,
+.merchant-wrapper .content .server .deliveryTime {
+  border-right: 1px solid rgba(7, 17, 27, 0.1);
+}
+.merchant-wrapper .content .server .sendPrice p:nth-of-type(1),
+.merchant-wrapper .content .server .deliveryPrice p:nth-of-type(1),
+.merchant-wrapper .content .server .deliveryTime p:nth-of-type(1) {
+  color: #93999f;
+  line-height: 10px;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+.merchant-wrapper .content .server .sendPrice p:nth-of-type(2),
+.merchant-wrapper .content .server .deliveryPrice p:nth-of-type(2),
+.merchant-wrapper .content .server .deliveryTime p:nth-of-type(2) {
+  color: #07111b;
+  line-height: 24px;
+  font-weight: 200;
+}
+.merchant-wrapper .content .server .sendPrice p:nth-of-type(2) > span:nth-of-type(1),
+.merchant-wrapper .content .server .deliveryPrice p:nth-of-type(2) > span:nth-of-type(1),
+.merchant-wrapper .content .server .deliveryTime p:nth-of-type(2) > span:nth-of-type(1) {
+  font-size: 24px;
+}
+.merchant-wrapper .content .server .sendPrice p:nth-of-type(2) > span:nth-of-type(2),
+.merchant-wrapper .content .server .deliveryPrice p:nth-of-type(2) > span:nth-of-type(2),
+.merchant-wrapper .content .server .deliveryTime p:nth-of-type(2) > span:nth-of-type(2) {
+  font-size: 10px;
+}
+.merchant-wrapper .content .server > div:last-child {
+  border: none;
+}
+.merchant-wrapper .content .activity {
+  width: 100%;
+  padding: 18px 18px 0 18px;
+  box-sizing: border-box;
+}
+.merchant-wrapper .content .activity .title {
+  font-size: 14px;
+  line-height: 14px;
+  color: #07111b;
+  margin-bottom: 8px;
+}
+.merchant-wrapper .content .activity .bulletin {
+  margin-left: 12px;
+  color: #f01414;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.merchant-wrapper .content .activity ul li {
+  width: 100%;
+  padding: 16px 0 16px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(1) {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(1).decrease {
+  background-image: url('../../../components/merchant/decrease_3@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .merchant-wrapper .content .activity ul li span:nth-of-type(1).decrease {
+    background-image: url('../../../components/merchant/decrease_3@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(1).discount {
+  background-image: url('../../../components/merchant/discount_3@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .merchant-wrapper .content .activity ul li span:nth-of-type(1).discount {
+    background-image: url('../../../components/merchant/discount_3@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(1).special {
+  background-image: url('../../../components/merchant/special_3@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .merchant-wrapper .content .activity ul li span:nth-of-type(1).special {
+    background-image: url('../../../components/merchant/special_3@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(1).invoice {
+  background-image: url('../../../components/merchant/invoice_3@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .merchant-wrapper .content .activity ul li span:nth-of-type(1).invoice {
+    background-image: url('../../../components/merchant/invoice_3@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(1).guarantee {
+  background-image: url('../../../components/merchant/guarantee_3@2x.png');
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .merchant-wrapper .content .activity ul li span:nth-of-type(1).guarantee {
+    background-image: url('../../../components/merchant/guarantee_3@3x.png');
+    background-size: 100% 100%;
+  }
+}
+.merchant-wrapper .content .activity ul li span:nth-of-type(2) {
+  font-size: 12px;
+  line-height: 16px;
+  color: #07111b;
+  font-weight: 200;
+}
+.merchant-wrapper .content .realisticPicture {
+  width: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+}
+.merchant-wrapper .content .realisticPicture .title {
+  color: #07111b;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+.merchant-wrapper .content .realisticPicture .pic {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.merchant-wrapper .content .realisticPicture .pic img {
+  display: inline-block;
+  height: 90px;
+  margin-right: 12px;
+  margin-top: 12px;
+}
+.merchant-wrapper .content .message {
+  width: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+}
+.merchant-wrapper .content .message .title {
+  color: #07111b;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+.merchant-wrapper .content .message .msg {
+  padding: 16px 0 16px 12px;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+  font-size: 12px;
+  line-height: 16px;
+  color: #07111b;
+}
+.merchant-wrapper .content .message:last-child {
+  border: none;
+}

@@ -1,0 +1,199 @@
+@import "./mixin/bg_img";
+.merchant-wrapper{
+  width: 100%;
+  position: absolute;
+  top:174px;
+  bottom:0;
+  left: 0;
+  overflow: hidden;
+  .content{
+    width: 100%;
+    .merchant-header{
+      display: flex;
+      justify-content: space-between;
+      padding: 18px;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(7,17,27,0.1);
+      .header-left{
+        &>p{
+          font-size: 14px;
+          color: rgb(7,17,27);
+          line-height: 14px;
+          margin-bottom: 8px;
+        }
+        .star-wrapper{
+          display: flex;
+          justify-content: flex-start;
+          &>span{
+            font-size: 10px;
+            color: rgb(77,85,93);
+          }
+          &>span:nth-of-type(1){
+            margin-left: 8px;
+          }
+          &>span:nth-of-type(2){
+            margin-left: 12px;
+          }
+        }
+      }
+      .header-right{
+        &>div{
+          font-size: 24px;
+          line-height: 24px;
+          margin-bottom: 4px;
+          text-align: center;
+          &.active{
+            color: rgb(240,20,20);
+          }
+        }
+        &>p{
+          font-size: 10px;
+          line-height: 10px;
+          color: rgb(77,85,93);
+        }
+      }
+    }
+    .server{
+      margin-left: 18px;
+      margin-right: 18px;
+      box-sizing: border-box;
+      border-top:1px solid rgba(7,17,27,0.1);
+      padding: 18px 0 18px 0;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      &>div{
+        flex:1;
+      }
+      .sendPrice,.deliveryPrice,.deliveryTime{
+        border-right: 1px solid rgba(7,17,27,0.1);
+        p:nth-of-type(1){
+          color: rgb(147,153,159);
+          line-height: 10px;
+          font-size: 10px;
+          margin-bottom: 4px;
+        }
+        p:nth-of-type(2){
+            color: rgb(7,17,27);
+          line-height: 24px;
+          font-weight: 200;
+          &>span:nth-of-type(1){
+            font-size: 24px;
+          }
+          &>span:nth-of-type(2){
+            font-size: 10px;
+          }
+        }
+      }
+      &>div:last-child{
+        border: none;
+      }
+    }
+    .activity{
+      width: 100%;
+      padding: 18px 18px 0 18px;
+      box-sizing: border-box;
+      .title{
+        font-size: 14px;
+        line-height: 14px;
+        color: rgb(7,17,27);
+        margin-bottom: 8px;
+      }
+      .bulletin{
+        margin-left: 12px;
+        color: rgb(240,20,20);
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+      ul{
+        li{
+          width: 100%;
+            padding: 16px 0 16px 0;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgba(7,17,27,0.1);
+          border-top: 1px solid rgba(7,17,27,0.1);
+          span:nth-of-type(1){
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+            &.decrease {
+              .bg_img('../../../components/merchant/decrease_3')
+            }
+
+            &.discount {
+              .bg_img('../../../components/merchant/discount_3')
+            }
+
+            &.special {
+              .bg_img('../../../components/merchant/special_3')
+            }
+
+            &.invoice {
+              .bg_img('../../../components/merchant/invoice_3')
+            }
+
+            &.guarantee {
+              .bg_img('../../../components/merchant/guarantee_3')
+            }
+          }
+          span:nth-of-type(2){
+            font-size: 12px;
+            line-height: 16px;
+            color: rgb(7,17,27);
+            font-weight: 200;
+          }
+        }
+      }
+    }
+    .realisticPicture{
+      width: 100%;
+      padding: 18px;
+      box-sizing: border-box;
+      .title{
+        color: rgb(7,17,27);
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 8px;
+      }
+      .pic{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        img{
+          display: inline-block;
+          height: 90px;
+          margin-right:12px;
+          margin-top: 12px;
+        }
+      }
+
+    }
+    .message{
+      width: 100%;
+      padding: 18px;
+      box-sizing: border-box;
+      .title{
+        color: rgb(7,17,27);
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 8px;
+      }
+      .msg{
+        padding: 16px 0 16px 12px;
+        box-sizing:border-box;
+        width: 100%;
+        border-top:1px solid rgba(7,17,27,0.1) ;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgb(7,17,27);
+      }
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}

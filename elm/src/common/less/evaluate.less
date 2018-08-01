@@ -1,0 +1,117 @@
+.evaluate-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 174px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  .score-wrapper {
+    width: 100%;
+    border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+    border-top: 1px solid rgba(7, 17, 27, 0.1);
+    padding: 18px 24px 18px 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    .grade {
+      box-sizing: border-box;
+      flex: 1 0 auto;
+      text-align: center;
+      border-right: 1px solid rgba(7, 17, 27, 0.1);
+      .item1 {
+        font-size: 24px;
+        color: rgb(255, 153, 0);
+        line-height: 26px;
+      }
+      .item2 {
+        font-size: 12px;
+        line-height: 12px;
+        color: rgb(7, 17, 27);
+        margin-top: 6px;
+      }
+      .item3 {
+        font-size: 10px;
+        line-height: 10px;
+        color: rgb(7, 17, 27);
+        margin-top: 8px;
+      }
+    }
+    .star-wrapper {
+      padding-left: 24px;
+      box-sizing: border-box;
+      flex: 2 1 auto;
+      display: flex;
+      flex-direction: column;
+      .star-wrapper3, .star-wrapper2 {
+        margin-top: 8px;
+      }
+      .star-wrapper1, .star-wrapper2, .star-wrapper3 {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        line-height: 18px;
+        .text1 {
+          font-size: 12px;
+          color: rgb(7, 17, 27);
+        }
+        .text2 {
+          margin-left: 12px;
+          font-size: 12px;
+          color: rgb(147, 153, 159)
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  .tab-wrapper {
+    padding: 0 18px 0 18px;
+    box-sizing: border-box;
+  }
+  .hasContent{
+    padding: 12px 18px 12px 18px;
+    font-size: 12px;
+    color: rgb(147,153,159);
+    width: 100%;
+    border-bottom: 1px solid rgba(7,17,27,0.1);
+    .hasContentBg{
+      color: #00a0dc;
+    }
+  }
+  .list-wrapper li{
+    padding: 16px 18px 16px 18px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(7,17,27,0.1);
+  }
+  .list-wrapper .customer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 12px;
+    .time,.pic span{
+      font-size: 10px;
+      color: rgb(147,153,159);
+    }
+    .pic img{
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  }
+  .content{
+    margin-top: 12px;
+    font-size: 12px;
+    i{
+      color: rgb(147,153,159);
+      line-height: 24px;
+    }
+    i.icon-thumb_up{
+      color: rgb(0,160,220);
+    }
+    span{
+      color: rgb(7,17,27);
+      line-height: 16px;
+    }
+  }
+}

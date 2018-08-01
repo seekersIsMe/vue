@@ -1,0 +1,22 @@
+@import "./mixin/bg_img";
+.star{
+  display: flex;
+  justify-content: center;
+  .star_item{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-size: 20px 20px;
+  }
+  .on{
+    .bg_img('../../../components/star/star48_on');
+  }
+  .half{
+    .bg_img('../../../components/star/star48_half');
+  }
+  .off{
+    .bg_img('../../../components/star/star48_off');
+  }
+}
